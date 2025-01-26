@@ -35,7 +35,8 @@
 
 **To Run the Code:**
   ```bash
-    python3 -u src/main.py
+cd src
+python3 -u main.py
   ```
 
 **The result will be stored in the ./data directory with the name test_result.mp4**
