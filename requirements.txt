@@ -1,0 +1,8 @@
+torch 
+torchvision 
+torchaudio
+mediapipe
+opencv-python
+pillow
+eva-decord
+supervision
