@@ -33,7 +33,7 @@
 
 **Upload your input video to the ./data directory with the name test.mp4.**
 
-**To Run the Code:**
+## To Run the Code:
   ```bash
 cd src
 python3 -u main.py
