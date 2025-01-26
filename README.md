@@ -42,14 +42,14 @@ Follow these steps to set up the environment:
 
 **The result will be stored in the ./data directory with the name test_result.mp4**
 
-##For Colab Users
+## For Colab Users
 If you're using Google Colab, there is a notebook available in the ./notebook directory named main.ipynb. You can run this notebook sequentially in Colab using GPU runtime.
 
-##Recommended:
+## Recommended:
 It is  recommended to use Google Colab as it provides GPU runtime, which will speed up the processing. On macOS, running SAM2 might take around 30-40 minutes.
 Output
 
-##Edge Cases Handled
+## Edge Cases Handled
 The code base has been designed to handle the following edge cases:
 
 - Single Hand: The tracker works if there is only one hand in the video.
