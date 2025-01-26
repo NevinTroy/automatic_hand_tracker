@@ -2,11 +2,9 @@
 *by Nevin Mathews Kuruvilla (nm4709)*
 
 ## Introduction  
-**Automatic Hand Tracker** is a simple hand tracking tool designed for video inputs using Google MediaPipe for hand detection and SAM2 by Meta for tracking segmented hands. This tool can help detect and track hand movements in videos with high accuracy.
+**Automatic Hand Tracker** is a simple hand tracking tool designed for video inputs using Google MediaPipe for hand detection and SAM2 by Meta for tracking segmented hands. 
 
 ## Setup for macOS Users
-
-Follow these steps to set up the environment:
 
 1. **Create and activate the Conda environment**:
    ```bash
