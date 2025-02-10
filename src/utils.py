@@ -63,6 +63,17 @@ def save_bounding_boxes(detection_result):
             }
         })
 
+    if len(bounding_boxes) == 1:
+        bounding_boxes.append({
+            "hand_index": 2,
+            "bounding_box": {
+                "x_min": 0,
+                "y_min": 0,
+                "x_max": 0,
+                "y_max": 0
+            }
+        })
+
     with open(f'{DATA_DIR}/hand_bbox.json', "w") as json_file:
         json.dump(bounding_boxes, json_file, indent=4)
 

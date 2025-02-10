@@ -56,10 +56,9 @@ def track_hands(input_video_path, output_video_path):
         bbox = json.load(json_file)
 
     #types of hand classes
-    hands = [0,1]
+    hands = [0,1,2]
     for hand in hands:
         box = [b for b in bbox if b['hand_index'] == hand]
-
         #Handling the case where there is only one hand in the video
         if len(box) == 0:
             continue
@@ -72,13 +71,13 @@ def track_hands(input_video_path, output_video_path):
             b["bounding_box"]['y_max']]
             for b in box], 
         dtype = np.float32)
-
+        
         _, object_ids, mask_logits = predictor.add_new_points(
             inference_state=inference_state,
             frame_idx=0,
             obj_id=hand,
             box = boxx
-        )
+        )   
 
     #Propogating the masks to original video
     video_info = sv.VideoInfo.from_video_path(input_video_path)
@@ -119,4 +118,4 @@ if __name__ == "__main__":
     output_video_path = f'{DATA_DIR}/test_result.mp4'
 
     detect_hands(input_video_path)
-    track_hands(input_video_path, output_video_path)
+    # track_hands(input_video_path, output_video_path)
